@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career - Raj Prints</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="background-gradient"></div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" aria-label="Back to Home">
+                    <img src="assets/images/logo.png" alt="Raj Prints Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="clients.html">Our Clients</a></li>
+                    <li><a href="career.html" class="active">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-nav-overlay">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="clients.html">Our Clients</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header Section -->
+        <section class="page-header-container">
+            <div class="container">
+                <div class="section-box text-center">
+                    <h2 class="heading-gradient">Join Our Team</h2>
+                    <p class="page-subtitle" style="color: var(--text-secondary);">We believe that our employees are our greatest strength. We hire and train the best talent, providing an infrastructure that allows for continuous learning and progress in knowledge, experience, and wealth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Positions Section -->
+        <section>
+            <div class="container">
+                <div class="section-box">
+                    <h2 class="heading-gradient">Current Openings</h2>
+                    <div class="job-listings">
+                        <div class="job-item">
+                            <h4>Graphic Designer</h4>
+                            <p>Opportunities for skilled, experienced designers as well as freshers looking to develop their skills in a creative environment.</p>
+                        </div>
+                        <div class="job-item">
+                            <h4>Sales Executive & Manager</h4>
+                            <p>Seeking individuals with good personality, communication skills, and market understanding for marketing and sales roles. Both experienced and fresher candidates are welcome.</p>
+                        </div>
+                        <div class="job-item">
+                            <h4>Production Supervisor</h4>
+                            <p>We're looking for diligent, punctual, and talented individuals with task management abilities for supervisor roles. Experience is a plus, but not required.</p>
+                        </div>
+                        <div class="job-item">
+                            <h4>Machine Operator</h4>
+                            <p>Hiring punctual and hardworking operators for our Flex and Offset printing machines.</p>
+                        </div>
+                        <div class="job-item">
+                            <h4>Fabricator / Fitter</h4>
+                            <p>Seeking skilled fabricators for iron pipe fitting, ACP boards, and glow sign boards. We also have opportunities for fitters and pasters, including freshers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Apply Section with Form -->
+        <section>
+            <div class="container">
+                <div class="section-box">
+                    <h2 class="heading-gradient">Apply Now</h2>
+                    <form id="careerForm" class="career-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">Mobile:</label>
+                                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location:</label>
+                                <input type="text" id="location" name="location" placeholder="Enter your current city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="position">Applying For:</label>
+                                <select id="position" name="position" required>
+                                    <option value="">-- Select Position --</option>
+                                    <option value="Graphic Designer">Graphic Designer</option>
+                                    <option value="Sales Executive">Sales Executive</option>
+                                    <option value="Sales Manager">Sales Manager</option>
+                                    <option value="Production Supervisor">Production Supervisor</option>
+                                    <option value="Machine Operator">Machine Operator</option>
+                                    <option value="Fabricator / Fitter">Fabricator / Fitter</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="resume">Upload Resume:</label>
+                            <input type="file" id="resume" name="resume" required>
+                        </div>
+                        <div class="form-group text-center">
+                            <button id="submitBtn" type="submit" class="cta-button">
+                                <span id="btnText">Submit Application</span>
+                                <span id="spinner" class="spinner"></span>
+                            </button>
+                        </div>
+                         <p id="formMessage" class="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-contact">
+                <p><strong>Phone:</strong> <a href="tel:+919453308133">+91 94533 08133</a></p>
+                <p><strong>Email:</strong> <a href="mailto:rajprints2468@gmail.com">rajprints2468@gmail.com</a></p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/share/1CPVYTHiCV/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/rajprints2468?igsh=eTdqZXlpbjd1YXk4" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/company/rajprints/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page-specific script for form submission -->
+    <script>
+        document.getElementById("careerForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const file = form.resume.files[0];
+            const submitBtn = document.getElementById("submitBtn");
+            const btnText = document.getElementById("btnText");
+            const spinner = document.getElementById("spinner");
+            const formMessage = document.getElementById("formMessage");
+
+            if (!file) {
+                formMessage.textContent = "Please upload your resume.";
+                formMessage.style.color = "#ff4d4d";
+                return;
+            }
+
+            submitBtn.disabled = true;
+            btnText.style.display = 'none';
+            spinner.style.display = 'inline-block';
+            formMessage.textContent = "";
+
+            const reader = new FileReader();
+            reader.onload = function() {
+                const base64File = reader.result.split(",")[1];
+                const data = {
+                    name: form.name.value,
+                    mobile: form.mobile.value,
+                    location: form.location.value,
+                    position: form.position.value,
+                    filename: file.name,
+                    resume: base64File
+                };
+
+                fetch("https://script.google.com/macros/s/AKfycbxl6BUsuVUZ1Y0lyMdz_2fOc9sHk86zA_x2ArRUddzxxM4TSQDDiR1o9OFw3AlQt1nfpg/exec", {
+                    method: "POST",
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.json())
+                .then(result => {
+                    if (result.message) {
+                        formMessage.textContent = "Application Submitted Successfully!";
+                        formMessage.style.color = "#4CAF50";
+                        form.reset();
+                    } else {
+                        throw new Error("Submission failed. Please try again.");
+                    }
+                })
+                .catch(error => {
+                    formMessage.textContent = error.message || "Something went wrong!";
+                    formMessage.style.color = "#ff4d4d";
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    btnText.style.display = 'inline-block';
+                    spinner.style.display = 'none';
+                });
+            };
+            reader.readAsDataURL(file);
+        });
+    </script>
+</body>
+</html>
+
